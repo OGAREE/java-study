@@ -7,5 +7,11 @@
 	</classpathentry>
 	<classpathentry kind="src" path="java-study-01"/>
 	<classpathentry kind="src" path="java-study-02"/>
+	<classpathentry kind="src" path="java-study-03"/>
+	<classpathentry kind="src" path="java-study-04"/>
+	<classpathentry kind="src" path="java-study-05"/>
+	<classpathentry kind="src" path="java-study-06"/>
+	<classpathentry kind="src" path="java-study-07"/>
+	<classpathentry kind="src" path="java-study-08"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
