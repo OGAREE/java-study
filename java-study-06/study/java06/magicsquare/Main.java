@@ -6,5 +6,10 @@ public class Main {
 		oddmagic.make();
 		oddmagic.print();
 		System.out.println(oddmagic.isCheck());
+		
+		FourMagicSquare fourmagic = new FourMagicSquare();
+		fourmagic.make();
+		fourmagic.print();
+		System.out.println(fourmagic.isCheck());
 	}
 }
