@@ -11,5 +11,10 @@ public class Main {
 		fourmagic.make();
 		fourmagic.print();
 		System.out.println(fourmagic.isCheck());
+		
+		SixMagicSquare sixmagic = new SixMagicSquare();
+		sixmagic.make();
+		sixmagic.print();
+		System.out.println(sixmagic.isCheck());
 	}
 }
