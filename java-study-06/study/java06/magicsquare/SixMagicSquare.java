@@ -1,5 +1,7 @@
 package study.java06.magicsquare;
 
+import study.java07.abstractclass.magicsquare.OddMagicSquare;
+
 public class SixMagicSquare {
 	private int[][] magic;
 
@@ -91,18 +93,19 @@ public class SixMagicSquare {
 
 	private void addABCD() {
 		int count = magic.length;
-		OddMagicSquare odd = new OddMagicSquare();
+		OddMagicSquare odd = new OddMagicSquare(count/2);
 		odd.make();
 		int[][] oddM = odd.getMagic();
 		for (int i = 0; i < count/2; i++) {
 			for (int j = 0; j < count/2; j++) {
-				magic[i][j]+=oddM[i][j];
-				magic[i][j+count/2]+=oddM[i][j];
-				magic[i+count/2][j]+=oddM[i][j];
-				magic[i+count/2][j+count/2]+=oddM[i][j];
+				magic[i][j] += oddM[i][j];
+				magic[i][j+count/2] += oddM[i][j];
+				magic[i+count/2][j] += oddM[i][j];
+				magic[i+count/2][j+count/2] += oddM[i][j];
 			}
 		}
 	}
+	
 
 	//마방진 출력하기
 	public void print() {
@@ -124,9 +127,9 @@ public class SixMagicSquare {
 		int[] mCheck = new int [2*count+2];
 		for (int i = 0; i < count; i++) {
 			for (int j = 0; j < count; j++) {
-				// 가로 3줄
+				// 가로줄
 				mCheck[i]+=magic[i][j];
-				// 세로 3줄
+				// 세로줄
 				mCheck[i+count]+=magic[j][i];
 				// \대각선
 				if (i==j) {

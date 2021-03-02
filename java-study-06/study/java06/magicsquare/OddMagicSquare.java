@@ -81,9 +81,9 @@ public class OddMagicSquare {
 		int[] mCheck = new int [2*count+2];
 		for (int i = 0; i < count; i++) {
 			for (int j = 0; j < count; j++) {
-				// 가로 3줄
+				// 가로줄
 				mCheck[i]+=magic[i][j];
-				// 세로 3줄
+				// 세로줄
 				mCheck[i+count]+=magic[j][i];
 				// \대각선
 				if (i==j) {
