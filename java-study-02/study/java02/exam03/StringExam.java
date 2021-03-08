@@ -43,6 +43,14 @@ public class StringExam {
 		System.out.println(str.equals(str1)); //true
 		System.out.println(str.equalsIgnoreCase(str2)); //true
 		
+		// String 관련 문자열 클래스
+		// String, StringBuffer, StringBuilder
+		// String : 참조타입이지만 기본타입의 성질을 가지고 있는 문자열 클래스
+		// StringBuffer: 진정한 참조타입 클래스이다!(thread-safety) 동기화(synchronized), 속도느림!					 		 	
+		// StringBuilder: 진정한 참조타입 클래스이다!(thread-unsafety) 속도빠름!!							 
+		StringBuffer sb = new StringBuffer("고길동");
+		sb.append(" 소드마스터");
+		System.out.println(sb);
 		
 		
 	}
